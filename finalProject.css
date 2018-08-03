@@ -1,0 +1,320 @@
+#miam {
+    font-family: 'Anton', sans-serif;
+    color: #ff6a00;
+    font-size: 100px;
+    text-decoration: none;
+}
+
+#i {
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size: 100px;
+    text-decoration: none;
+}
+
+#nsider {
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 70px;
+    text-decoration: none;
+}
+/* Style the No-Links inside the navigation bar */
+#noLink{
+    float: left;
+    font-family: 'Comfortaa', cursive;
+    background-color: #ffbf00;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+ }
+
+header {
+    background-color: white;
+    text-align: center;  
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: #ff6a00;
+    overflow: hidden;
+    margin-top:0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ffbf00;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#logo {
+    float:left;
+    margin-top:10;
+    display: inline-block;
+}
+
+/* Slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: deeppink;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-color: transparent;
+}
+.parallaxHome, .parallaxRandom, .parallaxPerson, .parallaxEvents, .parallaxContact{
+    min-height: 30%; 
+    max-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.parallaxHome {
+    background-image: url('southbeach.jpg');
+ }
+.parallaxRandom {
+    background-image: url('beach-blue.jpg');
+ }
+.parallaxPerson {
+    background-image: url('frost.jpg');
+}
+.parallaxEvents {
+    background-image: url('wynwood.jpg');
+}
+.parallaxContact {
+    background-image: url('brickell.jpg');
+}
+
+
+
+p {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.8;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: #ff6a00;
+}
+
+
+.button {
+    background-color: #ff6a00;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 80px 565px; 
+    position:relative;
+        }
+
+.button:hover {
+    background-color: orange;
+}
+
+#printActivity,  #printFood {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.generator {
+    text-decoration: underline;
+    color: #ff6a00;
+}
+
+#email {
+    color: #ff6a00;
+}
+
+.list {
+    display: inline-block;
+    list-style-type: circle;
+    list-style-position: outside;
+    font-family: "Comfortaa",cursive;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #ff6a00;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #b20000;
+}
+
+a {
+    color: #ff6a00;
+}
+
+hr {
+    border-top: 3px dotted black;
+    height: 5px;
+
+}
+
+.filterDiv {
+  float: left;
+  background-color: #ff6a00;
+  color: #ffffff;
+  width: 300px;
+  line-height: 10;
+  text-align: center;
+  margin: 2px;
+  display: none;
+ 
+}
+.filterDiv{
+    font-family:'Comfortaa', cursive;
+    font-size: 20px;
+    color:white;
+    
+    }
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}

@@ -1,0 +1,98 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <! META information> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Miami Insider tips">
+        <meta name="keywords" content="Miami, events, vacation, things to do">
+        <meta name="author" content="Gabi Twombly, Ana Torres, Jaby Garad">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="finalProject.js"></script>
+        <link rel="stylesheet" href="finalProject.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Comfortaa|Julius+Sans+One|Pacifico|Varela" >
+        <title>MiamInsider - Random Plans Generator</title>    
+     </head>
+
+        <header>
+            <a id="miam" href="homepage.html">MIAM</a><a id="i" href="homepage.html">I</a><a id="nsider" href="homepage.html">nsider</a>
+            <a id="logo" href="homepage.html"><img src="logo.png"></a>
+        </header>
+        <! TOPNAV> 
+        <div class="topnav">
+            <a id="noLink">Random Plans Generator</a>
+            <a href="personalized.html">Filtered Plans</a>
+            <a href="localEvents.html">Local Activities & Restaurants</a>
+            <a href="contactPage.html">Contact</a>
+        </div>
+        
+        <div class="parallaxRandom"></div>
+    
+        <div>
+            <h1>RANDOM PLANS GENERATOR</h1>
+            <p>Feeling spontaneous? With our Random Plans Generator, you can explore parts of Miami you have never been to and get the most out of your free time. Enjoy your day with our list of hand-picked places and restaurants and don't be shy to try something new!</p>
+<button onclick="pickRandomItems()" class="button">Randomize!</button>
+  
+<!--RANDOM ITEM CODE-->
+<p class="generator"><b>What to do</b></p>
+<p id="printActivity"></p>
+<p class="generator"><b>Where to eat</b></p>
+<p id="printFood"></p>
+
+
+<script>
+    
+var myActivities = ["Frost Museum","Spa Day","Movie theater","Picnic","Park","Pamm Art Museum","Music Festival","Concert","Baking","Beach","Take a Boat Tour","Arshton Center","Hiking","Biking","Camping","Walking Tour","Escape Room","Zoo","Karaoke","Pool","Cruise","Kayaking","Visit the Everglades","Volunteering","Color-Me-Mine","Boating","Watch the Sunrise/Sunset","Thrift Shopping","Mall/Shopping","Ice Skating","Skyzone","Yoga","Cycling","Farmer's Market","Get a Job","Parasailing","Scuba-Diving/Snorkeling","Rock Climbing","Hotel Stay","Wynwood","Botanical Gardens","Fire Pit/S'mores","Carnival","Versailles","Internships","Dayger","Strawberry Picking","Sports","Horseback Riding","Segway Tour","Arcade","Slumber Party"];
+
+
+var myFood = ["Cheesecake Factory","Salty Donut","Blue Ginger","Boca's House","Texas De Brazil","Tab 42","Poke + Go","Yard Bird","Michael Genuine","Raw Juce","Shake Shack","Mandolin","Thai Ice","Bayside","Wynwood","Zona Grill","Sabor a Peru","Paseo Catracho","Havana Harrey","BartonG","Moshi Moshi","Poc Buffet","Houston's","One Rooftop","Tacology","Lincoln Road","Sugar Factory","Pizza Rustica","Ginsen","Taikayi Wynwood","Pincho Factory","Cream","Piola","Mijana Lebanese Cuisine","Bavaria Haus","Bellini","Luke's Lobster","Jaxson's Ice Cream","PANNA","Novecento"];
+
+function pickRandomItems(){
+    var randomActivity = myActivities[Math.floor(Math.random()*myActivities.length)];
+    var randomFood = myFood[Math.floor(Math.random()*myFood.length)];
+    document.getElementById("printActivity").innerHTML = randomActivity;
+    document.getElementById("printFood").innerHTML = randomFood;
+    
+}
+    
+    </script>
+        </div>
+        <div class="parallaxRandom"></div>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="wynwood.jpg" style="width:100%">
+                <div class="text"><strong>Wynwood Walls</strong></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="frost.jpg" style="width:100%">
+                <div class="text"><strong>Frost Science Museum</strong></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="southbeach.jpg" style="width:100%">
+                <div class="text"><strong>South Beach</strong></div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+         <div class="parallaxRandom">
+        </div>
+         <script>
+             showSlides(slideIndex);
+         </script>
+    </body>
+</html>

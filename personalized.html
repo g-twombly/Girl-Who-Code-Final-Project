@@ -1,0 +1,118 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <! META information> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Miami Insider tips">
+        <meta name="keywords" content="Miami, events, vacation, things to do">
+        <meta name="author" content="Gabi Twombly, Ana Torres, Jaby Garad">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="finalProject.js"></script>
+        <link rel="stylesheet" href="finalProject.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Comfortaa|Julius+Sans+One|Pacifico|Varela" >
+        <title>MiamInsider - Personalized Plans</title>    
+    </head>
+    <body>
+        <header>
+            <a id="miam" href="homepage.html">MIAM</a><a id="i" href="homepage.html">I</a><a id="nsider" href="homepage.html">nsider</a>
+            <a id="logo" href="homepage.html"><img src="logo.png"></a>
+        </header>
+        <! TOPNAV> 
+        <div class="topnav">
+            <a href="random.html">Random Plans Generator</a>
+            <a id="noLink">Filtered Plans</a>
+            <a href="localEvents.html">Local Activities & Restaurants</a>
+            <a href="contactPage.html">Contact</a>
+        </div>
+        <div class="parallaxPerson"></div>
+        <div>
+            <h1>Filter</h1>
+            <p>Here we have our filter section. This filter is for the people who have an idea but do not want randomized plans. We filtered out each section to make it easier for you to find plans. We hope you have a great time!</p>
+            <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('outside')"> Outside Activities</button>
+  <button class="btn" onclick="filterSelection('restaurants')"> Restaurants</button>
+  <button class="btn" onclick="filterSelection('inside')"> Inside Activities</button>
+  <button class="btn" onclick="filterSelection('dessert')">Dessert Places</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+  <div class="filterDiv outside activities">Beach</div>
+  <div class="filterDiv restaurants">Blue Ginger</div>
+  <div class="filterDiv inside activities">Frost Musuem</div>
+  <div class="filterDiv dessert places">Salty Donut</div>
+  <div class="filterDiv outside activities ">Picnic</div>
+  <div class="filterDiv restaurants">Boca's House</div>
+  <div class="filterDiv inside activities">Spa Day</div>
+  <div class="filterDiv dessert places">Raw Juce</div>
+  <div class="filterDiv outside activities">Hiking/Biking</div>
+  <div class="filterDiv restaurants">Texas De Brazil</div>
+  <div class="filterDiv inside activities">PAMM Art Musuem</div>
+  <div class="filterDiv dessert places">Thai Ice</div>
+  <div class="filterDiv outside activities">Boat Tour of Miami</div>
+  <div class="filterDiv restaurants">Tap 42</div>
+  <div class="filterDiv inside activities">Arsht Center</div>
+  <div class="filterDiv dessert places">Sugar Factory</div>
+  <div class="filterDiv outside activities">Camping</div>
+  <div class="filterDiv inside activities">Escape Room</div>
+  <div class="filterDiv restaurants">Poke + Go</div>
+  <div class="filterDiv dessert places">Cream</div>
+  <div class="filterDiv outside activities">Walking Tour</div>
+  <div class="filterDiv restaurants">Sugar Factory</div>
+  <div class="filterDiv inside activities">Karaoke</div>
+  <div class="filterDiv dessert places">Jaxon's Ice Cream</div>
+  <div class="filterDiv outside activities">Zoo</div>
+  <div class="filterDiv restaurant">Micheal Genuine</div>
+  <div class="filterDiv inside activities">Color Me Mine</div>
+  <div class="filterDiv dessert places">Cream</div>
+  <div class="filterDiv outside activities">Kayaking</div>
+  <div class="filterDiv restaurants">Mandolin</div>
+  <div class="filterDiv inside activities">Thrift Shopping</div>
+  <div class="filterDiv dessert places">Taiyiki Wynwood</div>
+  <div class="filterDiv outside activities">Everglades</div>
+  <div class="filterDiv restaurants">Shake Shack</div>
+  <div class="filterDiv inside activities">Mall</div>
+  <div class="filterDiv outside activities">Farmers Market</div>
+  <div class="filterDiv restaurants">Zona Grill</div>
+  <div class="filterDiv inside activities">Ice-Skating</div>
+  <div class="filterDiv outside activities">Parsailing</div>
+  <div class="filterDiv restaurants">Sabor a Peru</div>
+  <div class="filterDiv inside activities">Skyzone</div>
+  <div class="filterDiv outside activities">Scuba Diving/Snorkeling</div>
+  <div class="filterDiv restaurants">Paseo Catracho</div>
+  <div class="filterDiv inside activities">Yoga</div>
+  <div class="filterDiv outside activities">Rock Climbing</div>
+  <div class="filterDiv restaurants">Havana Harry's</div>
+  <div class="filterDiv inside activities">Arcade</div>
+  <div class="filterDiv outside activities">Wynwood</div>
+  <div class="filterDiv restaurants">Barton G</div>
+  <div class="filterDiv outside activities">Botanical Gardens</div>
+  <div class="filterDiv restaurants">Moshi Moshi</div>
+  <div class="filterDiv outside activities">Wynwood</div>
+  <div class="filterDiv restaurnats">Pock Buffett</div>
+  <div class="filterDiv outside activities">Fire Pit/S'mores</div>
+  <div class="filterDiv restaurant">Houston's</div>
+  <div class="filterDiv outside activities">Strawberry Picking</div>
+  <div class="filterDiv restaurants">One Rooftop</div>
+  <div class="filterDiv outside activities">Horseback Riding</div>
+  <div class="filterDiv restaurants">Tacology</div>
+  <div class="filterDiv outside activities">Segway Tour</div>
+  <div class="filterDiv restaurants">Sugar Factory</div>
+  <div class="filterDiv restaurants">Pizzarium Downtown</div>
+  <div class="filterDiv restaurants">Pincho Factory</div>
+  <div class="filterDiv restaurants">Piola</div>
+  <div class="filterDiv restaurants">Palacio de los jugos</div>
+  <div class="filterDiv restaurants">Mijana Lebanese Cuisine</div>
+  <div class="filterDiv restaurants">Bavaria Haus</div>
+  <div class="filterDiv restaurants">Bellini</div>
+  <div class="filterDiv restaurants">Luke's Lobster</div>
+  <div class="filterDiv restaurants">Panna</div>
+  <div class="filterDiv restaurants">Novecento</div>
+
+            </div>
+        </div>
+        <div class="parallaxPerson"></div>
+    </body>
+</html>        
